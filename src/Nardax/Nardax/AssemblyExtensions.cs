@@ -6,6 +6,7 @@ namespace Nardax
 {
     public static class AssemblyExtensions
     {
+        //Hello world
         public static string GetAppSettingsValue(this Assembly assembly, string key)
         {
             var configuration = ConfigurationManager.OpenExeConfiguration(assembly.Location);
