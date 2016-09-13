@@ -19,11 +19,7 @@ namespace Nardax.UnitTests
         }
 
         [TestMethod]
-        public void EnqueueRange()
-        {
-            _queue.EnqueueRange(new[] { "dd", "ee" });
-
-            Assert.AreEqual("aa", _queue.Dequeue());
+jiooooooooooooooooooooooonnub
             Assert.AreEqual("bb", _queue.Dequeue());
             Assert.AreEqual("cc", _queue.Dequeue());
             Assert.AreEqual("dd", _queue.Dequeue());
