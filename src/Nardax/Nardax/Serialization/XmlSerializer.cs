@@ -5,12 +5,7 @@ using System.Xml.Serialization;
 
 namespace Nardax.Serialization
 {
-    public class XmlSerializer<T> : ISerializer<T, string>
-    {
 
-        //Serialisera ett värde som xml med valfri typ
-        public string Serialize(T value)
-        {
             using (var stream = new MemoryStream())
             {
                 var xs = new XmlSerializer(typeof(T));
