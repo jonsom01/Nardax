@@ -50,7 +50,27 @@ namespace Nardax.Tests
             var result = "NyanCat".RepeatMe();
 
             Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void AddCharBetween()
+        {
+            var testString = "abcde";
 
+            var result = testString.AddCharBetween('-');
+            var expected = "a-b-c-d-e";
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void AddCharBetween_CheckNull()
+        {
+            string testString = null;
+
+            var result = testString.AddCharBetween('-');
+            string expected = null;
+
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
