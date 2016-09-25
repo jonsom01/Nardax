@@ -16,6 +16,6 @@ namespace Nardax
             }
 
             return value.Substring(startIndex, maxLength);
-        }
+        } 
     }
 }
