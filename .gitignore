@@ -3,4 +3,5 @@
 *.pdb
 obj
 .suo
-vs
+.vs
+.bin
